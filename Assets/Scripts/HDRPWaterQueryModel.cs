@@ -17,7 +17,6 @@ namespace DefaultNamespace.Water
         public override float GetWaterLevelAt(Vector3 position)
         {
             WaterSearchParameters parameters = new WaterSearchParameters();
-            
             parameters.startPositionWS = result.candidateLocationWS; //TODO: Probably want to cache this, but for current purposes most points will be close to each other. Not true with multiple vehicles. Might want a copy of model for each vehicle instead?
             parameters.targetPositionWS = position;
             parameters.maxIterations = 6;
